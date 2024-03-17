@@ -4,6 +4,7 @@ def safe_path(path):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     filepath = os.path.normpath(os.path.join(base_dir, path))
     if base_dir != os.path.commonpath([base_dir, filepath]):
+        print("asdasd%s" % base_dir )
         return None
     return filepath
 
